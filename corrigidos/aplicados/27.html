@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 27 - While</title>
+</head>
+<body>
+    <h1>Faça um programa que receba 15 números inteiros e imprima na tela
+        a somatória dos 15 números. Utilize a estrutura de repetição
+        ENQUANTO.</h1>
+</body>
+<script>
+    var contador = 1;//contador de repetições com início em 1
+    var soma = 0;
+    var numeroDigitado = 0;
+
+    while ( contador <= 4 ){//enquanto a expressão der true
+        numeroDigitado = prompt("Digite um número");//texto "10"
+        soma = soma + parseFloat(numeroDigitado);
+        console.log("repetição número " + contador);
+        
+        contador++;
+    }
+
+    alert( "Somatório: " + soma );
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplos de Objetos em Javascript</title>
+    <style>
+        .vermelho{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+</body>
+<script>
+    
+    let joao = {nome : "João", sobrenome: "da Silva", idade : 15};
+    let maria = {nome : "Maria", sobrenome: "das Dores", idade : 22};
+    let jDark = {nome : "Joana", sobrenome: "Dark", idade : 200};
+
+    let arrPessoas = new Array();//array vazio
+        arrPessoas.push(joao);//acicionei o joao no índice 0
+        arrPessoas.push(maria);//1
+        arrPessoas.push(jDark);//2
+
+        console.log(arrPessoas);
+
+        for (let i = 0; i < arrPessoas.length; i++) {
+            console.log(arrPessoas[i].nome);
+        }
+        
+</script>
+</html>

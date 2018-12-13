@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplos de Objetos em Javascript</title>
+    <style>
+
+    </style>
+</head>
+<body onload="saudacao()">
+    <label for="">Nome</label>
+    <br>
+    <input type="text" id="nome" onkeydown="testar()">
+    <br>
+    <label for="">Idade</label>
+    <br>
+    <input type="number" id="idade" onchange="capturarDados()" onkeypress="capturarDados()">
+    <br><br>
+    <button type="button" onmouseover="testar()">Testar</button>
+    <button type="button" onmouseout="testar()">Limpar</button>
+    <span id="alvo"></span>
+</body>
+<script>
+        function capturarDados(){
+            let idade = document.getElementById("idade").value;
+            document.getElementById("alvo").innerHTML = idade;
+        }
+
+        function testar(){
+            alert("oi, eu sou a função testar");
+        }
+        function saudacao(){
+            alert("BOA NOITEEEEEEE!!!");
+        }
+</script>
+</html>

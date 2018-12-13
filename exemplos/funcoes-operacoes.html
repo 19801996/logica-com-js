@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Funções em JavaScript</title>
+</head>
+
+<body>
+    <label for="n1">Número 1</label>
+    <br>
+    <input type="text" id="n1">
+    <br>
+    <label for="n2">Número 2</label>
+    <br>
+    <input type="text" id="n2">
+    <br>
+    <label for="operacoes">Operações</label>
+    <br>
+    <select id="operacoes">
+        <option value="">Selecione</option>
+        <option value="+">soma</option>
+        <option value="-">subtração</option>
+        <option value="*">multiplicação</option>
+        <option value="/">divisão</option>
+    </select>
+    <br><br>
+    <input type="button" onclick="calcular()" value="Calcular">
+</body>
+<script>
+
+    function calcular() {
+        let v1 = parseFloat(document.getElementById("n1").value);
+        let v2 = parseFloat(document.getElementById("n2").value);
+        let op = document.getElementById('operacoes').value;
+        let resultado = "valor inicial";
+        
+        /*
+        if (op == "+") {
+            resultado = somar(v1, v2);
+        } else if (op == "-") {
+            resultado = subtrair(v1, v2);
+        } else if (op == "*") {
+            resultado = multiplicar(v1, v2);
+        } else if (op == "/") {
+            resultado = dividir(v1, v2);
+        } else {
+            resultado = "operação inválida";
+        }
+        */
+
+        switch (op) {
+            case "+":
+                resultado = somar(v1, v2);
+                break;
+            case "-":
+                resultado = subtrair(v1, v2);
+                break;
+            case "*":
+                resultado = multiplicar(v1, v2);
+                break;
+            case "/":
+                resultado = dividir(v1, v2);
+                break;
+            default:
+                resultado = "operação inválida";
+                break;
+        }
+
+        alert("Resultado da Operação é: " + resultado);
+    }
+
+
+    function somar(n1, n2) {
+
+        return n1 + n2;
+    }
+
+    function subtrair(n1, n2) {
+
+        return n1 - n2;
+    }
+
+    function multiplicar(n1, n2) {
+
+        return n1 * n2;
+    }
+
+    function dividir(n1, n2) {
+        if (n2 == 0) return "Não existe divisão por zero";
+
+        return n1 / n2;
+    }
+
+</script>
+
+</html>

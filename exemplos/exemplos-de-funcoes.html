@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Funções em JavaScript</title>
+</head>
+<body>
+    <label for="nome">Nome</label>
+    <input type="text" id="nomeDoCabra" placeholder="Nome">
+    <br>
+    <label for="nome">Sobrenome</label>
+    <input type="text" id="sobreNomeDoCabra" placeholder="Sobrenome">
+    <br>
+    <input type="button" onclick="saudacao()" value="Saudação">
+</body>
+<script>
+    function saudacao(){
+        let nome = pegarNome();
+        let sobreNome = pegarSobreNome();
+
+        alert("Boa noite " + nome +" "+ sobreNome);
+    }
+
+    function pegarNome(){
+        let n = document.getElementById('nomeDoCabra').value;
+        return n;
+    }
+
+    function pegarSobreNome(){
+        let s = document.getElementById('sobreNomeDoCabra').value;
+        return s;
+    }
+
+    
+
+    
+</script>
+</html>

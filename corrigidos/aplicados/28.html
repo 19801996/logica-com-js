@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 28 - While</title>
+</head>
+<body>
+    <h1>Faça um programa que pergunte para o usuário a quantidade de
+        números que ele quer digitar. Após isso crie um laço que exiba o
+        número que o usuário digitar apenas se for PAR. Utilize a estrutura
+        ENQUANTO;</h1>
+</body>
+<script>
+    var contador = parseInt( prompt("Quantos números você quer digitar?") );//contador de repetições com início em 1
+    var numeroDigitado = 0;
+    
+    while ( contador > 0 ){//enquanto a expressão der true
+        numeroDigitado = parseFloat( prompt("Digite um número:") );
+        
+        if( numeroDigitado % 2 == 0){//número é par
+            alert("Número digitado é par: " + numeroDigitado);
+        }
+
+        contador--;
+    }
+
+    alert( "FIM DO PROGRAMA! ");
+</script>
+</html>

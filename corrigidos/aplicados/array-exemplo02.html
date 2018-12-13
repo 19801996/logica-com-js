@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <button onclick="solicitarNumeros()">Solicitar Números</button>
+    <h4>Lista de seus números:</h4>
+    <ul id="lista-numeros"></ul>
+</body>
+
+<script>
+    function solicitarNumeros() {
+        let contador = 1;
+        let qtdVezes = parseInt(prompt("Quantos números voê quer digitar"));
+        let arrNumeros = new Array();
+
+        while (contador <= qtdVezes) {//3 vezes
+            arrNumeros.push(prompt("Amigão, digite o " + contador + "º número"));
+            contador++;
+        }
+        let template = "";
+
+        contador = 0;
+        while (contador < arrNumeros.length) {
+            //<li>4</li><li>900</li>
+            template = template + "<li>"+arrNumeros[contador]+"</li>";
+            contador++;
+        }
+
+        document.getElementById("lista-numeros").innerHTML = template;
+    }
+</script>
+
+</html>

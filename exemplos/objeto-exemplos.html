@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplos de Objetos em Javascript</title>
+    <style>
+        .vermelho{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+</body>
+<script>
+
+    let joao = { 
+            nome : "João", sobrenome : "da Silva",
+            idade : 20,
+                    // 0       1          2
+            filmes : ["ação", "romance", "terror"],
+            dormir : function () {
+                return "ZZzzZZ"
+            },
+            filho : [
+                //0
+                {nome : "joãozinho",sobrenome : "junior",idade:10},
+                //1
+                {nome : "mariazinha",sobrenome : "da silvinha",idade:3},
+            ]
+        };
+        console.log(joao);
+        
+        console.log(joao.filho[0].nome);
+
+    
+    // console.log(joao.nome);
+    // console.log(joao.idade);
+    // console.log(joao.filmes[0]);
+    // console.log(joao.filmes[2]);
+    // console.log(joao.dormir());
+
+    
+
+
+
+
+
+
+
+
+</script>
+</html>

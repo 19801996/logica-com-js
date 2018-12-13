@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estruturas de Repetição</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var numero = 1;
+    var nTentativas = 0;
+    while ( (numero % 2) == 1) { // enquanto o número for ímpar
+        numero = parseInt(prompt("Digite um número par"));
+        // nTentativas = nTentativas + 1;
+        // nTentativas += 1
+        nTentativas++;
+
+        if ((numero % 2) == 0 ) {// se o número for par
+            var mensagem = "BRIGADUUU, você digitou o número par " 
+                           +numero +" na " 
+                           +nTentativas + "a tentativa";
+            alert(mensagem);
+        }
+    }
+
+    alert("fim do programa");
+    
+</script>
+</html>

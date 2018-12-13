@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h1>Faça um programa que carregue 1 vetor de 6 elementos numéricos
+            inteiros. Calcule e imprima a quantidade de números ímpares e a
+            quantidade de números pares..</h1>
+    <button onclick="rodarPrograma()">Cadatrar Notas</button>
+    <h4>Lista de Alunos e médias:</h4>
+    <ul id="alunos-media">
+        
+    </ul>
+</body>
+
+<script>
+    function rodarPrograma() {
+        alert("programa rodando");
+            //índices  0  1  2  3   4     5    6
+        let numeros = [2, 4, 6, 10, 3299, 200, 333, 90];
+        console.log(numeros);
+
+        //criar variável pra contar números ípares
+        let qtdImpares = 0;
+        //criar variável pra contar números pares
+        let qtdPares = 0;
+        //criar um for que rode o array
+        for(let i = 0; i < numeros.length; i++){
+            //verificar se o número é par ou ímpar e contar + 1 na variável correspondente
+            if( numeros[i] % 2 == 0 ){//é par?
+                qtdPares++;
+            } else { //ímpar?
+                qtdImpares++;
+            }
+        }
+
+        //exibir o resultado
+        // 
+        // <li>Quantidade de números ímpares: 3</li>
+        let template = "<li>Quantidade de números pares: "+qtdPares+"</li>";
+        template = template + "<li>Quantidade de números ímpares:"+qtdImpares+"</li>";
+        
+        document.getElementById("alunos-media").innerHTML = template;
+    }
+</script>
+
+</html>

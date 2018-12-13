@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estruturas de Repetição</title>
+</head>
+<body>
+   
+</body>
+
+<script>
+    let nomes = new Array();//cria um array vazio
+    console.log("nomes ANTES DO PRIMEIRO FOR:");
+    console.log(nomes);
+
+    for (let index = 0; index < 4; index++) {
+        nomes.push( prompt("Digite o nome " + index) );
+    }
+
+    console.log();
+    console.log("nomes APÓS O PRIMEIRO FOR");
+    console.log(nomes);
+    console.log();
+    console.log();
+
+    for(let indice = 0; indice < nomes.length; indice++){
+        console.log(nomes[indice]);    
+    }
+
+</script>
+</html>

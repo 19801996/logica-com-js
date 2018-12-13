@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aplicados 01</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    4. Faça um programa que receba o nome, o peso e a altura de uma
+        pessoa. Calcule e imprima o nome e o IMC dessa pessoa. 
+        IMC = peso / (altura * altura).
+    */
+    
+    // ENTRADA
+    var nome = prompt("Digite seu nome");
+    var peso = parseFloat( prompt("Digite seu peso") );
+    var altura = parseFloat( prompt("Digite sua altura em metros.") );
+
+    //PROCESSAMENTO
+    //calcular o imc
+    var imc = peso / (altura * altura);
+
+    //SAÍDA
+    //apresenta o resultado com apenas 1 casa decimal
+    var txtResultado = nome + ", seu imc é: " + imc.toFixed(1);
+
+    alert( txtResultado );
+</script>
+
+</html>

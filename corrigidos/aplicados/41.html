@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h1>Faça um programa que utilize dois vetores (nomes e médias). 
+        Solicite ao usuário que informe: o nome, a nota da prova e
+            a nota do trabalho. Calcule a média e guarde os valores da média e do
+            nome em seus respectivos vetores. Ao final exiba todos os dados.</h1>
+    <button onclick="rodarPrograma()">Cadatrar Notas</button>
+    <h4>Lista de Alunos e médias:</h4>
+    <ul id="alunos-media"></ul>
+</body>
+
+<script>
+    function rodarPrograma() {
+        let arrAlunos = new Array();
+        let arrMedias = new Array();
+        
+        let qtdAlunos = parseInt(prompt("Quantos alunos você quer cadastrar?"));
+        let cont = 1;
+        let nome, notaProva, notaTrabalho, media;
+
+        while( cont <= qtdAlunos){
+            //solicita os dados de cada aluno
+            nome         = prompt("Qual é o nome do aluno "+cont);
+            notaProva    = parseFloat(prompt("Informe a nota da prova do aluno "+nome));
+            notaTrabalho = parseFloat(prompt("Informe a nota do trabalho do aluno "+nome));
+            //calcula a média
+            media        = (notaProva + notaTrabalho) / 2; 
+            
+            //cadastra as informações nos vetores/arrays alunos e medias
+            arrAlunos.push(nome);
+            arrMedias.push(media);
+
+            cont++;
+        }
+
+        let template = "";
+        for (let i = 0; i < arrAlunos.length; i++) {
+            //<li>Eduardo: 4</li>
+            template = template + "<li>"+arrAlunos[i]+": "+ arrMedias[i]+"</li>";
+        }
+
+        document.getElementById("alunos-media").innerHTML = template;
+    }
+</script>
+
+</html>

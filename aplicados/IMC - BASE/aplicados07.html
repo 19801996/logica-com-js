@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios Aplicados</title>
+</head>
+<body>
+<h1>Exercícios Aplicados - 07</h1>
+
+<h2>
+    Faça um programa que receba o nome, cargo e salário de um
+    funcionário. 
+    
+    Calcule o salário acrescido de 10%. Ao final exiba o nome,
+    o cargo e o novo salário desse funcionário.
+</h2>
+
+</body>
+
+<script>
+
+
+    //entrada
+    var nome    = prompt("Informe seu nome");
+    var cargo   = prompt("Qual é o seu cargo?");
+    var salario = parseFloat( prompt("Qual é o seu salário?") );
+
+    //processamento
+    var novoSalario = ((salario / 100) * 10) + salario;
+
+    //saída
+    alert("Seu novo salário é: " + novoSalario);
+
+</script>
+</html>

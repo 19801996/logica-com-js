@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estruturas de Repetição</title>
+</head>
+<body>
+    <h1>Faça um programa que imprima na tela a tabuada de um número
+        qualquer escolhido pelo usuário</h1>
+</body>
+
+<script>
+    //solicitar o número para o usuário
+    //criar um laço for (de 1 a 10)que exiba a tabuada do número
+    let tabuada = prompt("Qual tabuada você quer saber?");//trocar pelo prompt para solicitar ao usuário
+    tabuada = parseInt(tabuada);
+
+    let resultado = "";
+    for( let i = 1; i <= 10; i++ ){
+        /*
+        "5 x 1 = 5"
+        "5 x 2 = 10"
+        "5 x 3 = 15"
+        */
+        resultado = tabuada + " x "+ i +" = " + (tabuada * i);
+        console.log( resultado );
+    }
+
+</script>
+</html>

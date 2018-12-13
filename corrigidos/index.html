@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>BEM - Block Element Modifier</title>
+</head>
+
+<body>
+    <form action="" method="POST" class="form">
+        <div class="fundo">
+            <h1 class="form__title">Cálculo de IMC</h1>
+            <label class="form__label" for="nome">Nome</label>
+            <input class="form__input" type="text" id="nome" placeholder="seu nome">
+
+            <label class="form__label" for="peso">Peso</label>
+            <input class="form__input" type="text" id="peso" placeholder="Digite seu peso">
+
+            <label class="form__label" for="altura">Altura</label>
+            <input class="form__input" type="text" id="altura" placeholder="Digite sua altura em metros">
+
+
+            <div class="form__line">
+                <button class="button button--normal" onclick="calcularImc();">Calcular</button>
+                <button class="button button--orange-red" type="reset">Limpar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

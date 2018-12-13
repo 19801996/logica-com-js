@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aplicados 01</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    2. Faça um programa que receba o ano de nascimento de uma pessoa e
+o ano atual. Calcule e imprima:
+    a. A idade dessa pessoa
+    b. Essa idade convertida em semana
+    */
+   //ENTRADA
+   var anoNascimento = prompt("Digite o ano de seu nascimento");
+   var anoAtual = 2018;
+
+   anoNascimento = parseInt(anoNascimento);
+
+    //PROCESSAMENTO
+    var idade = anoAtual - anoNascimento;
+    var idadeEmSemanas = 4 * 12 * idade;
+
+    //SAÍDA
+   alert("Sua idade é: " + idade);
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introdução ao DOM</title>
+    <style>
+        .azul {
+            color: blue;
+        }
+        .input {
+            background-color: beige;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <label for="nome" class="azul">Nome</label>
+    <input type="text" class="input" id="nome" value="Eduardo">
+    <br>
+    <label for="sobrenome">Sobrenome</label>
+    <input type="text" class="input" id="sobrenome" value="Costa">
+    <br>
+    <label for="idade" class="azul">Idade</label>
+    <input type="text" class="input" id="idade" value="50">
+
+</body>
+<script>
+    // getElementById()
+    // let elemento = document.getElementById("nome");
+    // console.log(elemento);
+    // console.log(elemento.value);
+
+    let elementos = document.getElementsByClassName("input");
+    // console.log(elementos);
+    console.log();
+    
+    console.log(elementos[0]);
+    console.log(elementos[1]);
+    console.log(elementos[2]);
+    
+
+
+    
+     
+       
+</script>
+</html>
